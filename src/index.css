@@ -1,19 +1,39 @@
 *{
   margin: 0;
   padding: 0;
-  background-color: rgb(201, 201, 201);
+  background-color: rgb(195, 216, 247);
   box-sizing: border-box;
 }
 
 .quote-container{
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
- justify-content: center;
- align-items: center;
+  border: rgb(48, 159, 244) solid 2px;
+  border-radius: 20px;
+  margin: 20px;
+  padding: 10px;
+
  
 }
 
+.quote-container p {
+  margin-top: 30px;
+  color: rgb(99, 99, 99);
+}
+
+.main-container{
+  width: 100vw;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.get-quote-btn{
+  border: rgb(48, 159, 244) solid 2px;
+  border-radius: 20px;
+  padding: 10px;
+}
 
 
 

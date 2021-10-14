@@ -1,7 +1,13 @@
 const { response } = require("express");
+const cors = require("cors");
+
+// before routes definition
+
 
 const express = require("express");
 const app = express();
+app.use(cors()); // 
+
 const quotes = require("./quotes.json");
 
 const quoteFunc = (request, response)=> {
@@ -18,7 +24,7 @@ const randomQuoteFunc = (req, res)=>{
 
 app.get("/", quoteFunc);
 app.get("/quotes", jsonQuoteFunc);
-app.get("/quotes/random", randomQuoteFunc)
+app.get("/quotes/random", randomQuoteFunc )
 
 function pickFromArray(arr) {
   return arr[Math.floor(Math.random() * arr.length)];
