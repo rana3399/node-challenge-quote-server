@@ -5,6 +5,17 @@
   box-sizing: border-box;
 }
 
+h1{
+  color: blue;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .quote-container{
   border: rgb(48, 159, 244) solid 2px;
   border-radius: 20px;
@@ -29,6 +40,18 @@
   text-align: center;
 }
 
+.search-container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.search-container input{
+  margin-bottom: 1rem;
+  width: 15rem;
+  min-height: 2rem;
+  border-radius: .5rem;
+}
 .get-quote-btn{
   border: rgb(48, 159, 244) solid 2px;
   border-radius: 20px;
